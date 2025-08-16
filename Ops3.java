@@ -16,11 +16,7 @@ public static void main(String[] args) {
     for(int i=0;i<3;i++){
         System.out.println(s2.marks[i]);
     }
-
-    
-
 }
-
 }
 
 class Student{
@@ -34,11 +30,21 @@ class Student{
         marks=new int[3];
     }
 
-    Student(Student s1){//copy constructor
-      marks=new int[3];
-      this.name=s1.name;
-      this.age=s1.age;
-      this.marks=s1.marks;
+    // Student(Student s1){//shallow copy constructor
+    //   marks=new int[3];
+    //   this.name=s1.name;
+    //   this.age=s1.age;
+    //   this.marks=s1.marks;
+    // }
+
+    //deep copy constructor
+    Student(Student s1){
+        marks=new int[3];
+        this.name=s1.name;
+        this.age=s1.age;
+         for(int i=0;i<3;i++){
+            marks[i]=s1.marks[i];
+        }
 
     }
     Student(String name){
