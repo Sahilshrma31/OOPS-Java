@@ -1,4 +1,4 @@
-public class OOPS1 {
+public class GettersSetters {
     public static void main(String[] args) {
         Pen p1=new Pen();//here Pen() is a constructor and it created an object p1
         p1.setColor("blue");

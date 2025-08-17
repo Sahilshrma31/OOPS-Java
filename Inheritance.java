@@ -1,6 +1,6 @@
 //shallow copy and deep copy
 //shallow copy reflects changes but depe copy does not
-public class Oops4 {
+public class Inheritance {
  public static void main(String[] args) {
     Dog dobby=new Dog();
     dobby.eat();
